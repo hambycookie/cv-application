@@ -1,14 +1,14 @@
 import "../styles/Resume.css"
 
-function Resume() {
+function Resume({ personalInfo }) {
   return (
     <section className="resume-container">
       <div className="resume">
-        <h1 className="name main-part">Hana Bae</h1>
+        <h1 className="name main-part">{personalInfo.fullName}</h1>
         <div className="contact-section side-part">
           <div className="contact-info">
-            <p>213.507.5327</p>
-            <p>habae1004@gmail.com</p>
+            <p>{personalInfo.phone}</p>
+            <p>{personalInfo.email}</p>
           </div>
         </div>
         <p className="summary main-part section-content-indent">
