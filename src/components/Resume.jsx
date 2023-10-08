@@ -26,7 +26,7 @@ function Resume() {
             {/* insert section-content here */}
           </div>
         </div>
-        <div className="skills-sectionside-part">
+        <div className="skills-section side-part">
           <div className="skills-content">
             <h5 className="section-title">SKILLS</h5></div>
             {/* insert section-content */}
