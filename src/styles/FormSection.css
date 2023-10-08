@@ -1,10 +1,15 @@
 .form-title {
-  margin: 1rem 0;
+  margin: 1rem 0.5rem;
   text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
-.form-inputs {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.form-title::before {
+  content: "+ ";
+}
+
+.Collapsible__contentOuter {
+  transition: height 200ms linear 0s;
 }
