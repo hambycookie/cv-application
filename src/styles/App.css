@@ -2,3 +2,14 @@
   max-width: 1280px;
   padding: 2rem;
 }
+
+.app {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+}
+
+EditPanel {
+  justify-self: flex-end;
+}
