@@ -1,0 +1,29 @@
+.form-card {
+  background-color: rgb(227, 227, 227);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.form-title {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.form-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  opacity: 0.6; /* Firefox */
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+input::-ms-input-placeholder { /* Microsoft Edge */
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
