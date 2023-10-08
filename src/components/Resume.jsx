@@ -1,6 +1,6 @@
 import "../styles/Resume.css"
 
-function Resume({ personalInfo }) {
+function Resume({ personalInfo, summary }) {
   return (
     <section className="resume-container">
       <div className="resume">
@@ -12,7 +12,7 @@ function Resume({ personalInfo }) {
           </div>
         </div>
         <p className="summary main-part section-content-indent">
-          Self-motivated IT professional with three years of experience and a B.S. in human-computer interaction. Key strengths include communication, analytical problem-solving, attention to detail, and eagerness to learn new skills and tools.
+          {summary}
         </p>
         <div className="education-section side-part">
           <div className="education-content">

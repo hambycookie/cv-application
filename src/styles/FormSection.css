@@ -1,12 +1,7 @@
-.form-card {
-  background-color: rgb(227, 227, 227);
-  border-radius: 16px;
-  padding: 20px;
-}
-
 .form-title {
   margin: 0;
   margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 .form-questions {
