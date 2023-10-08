@@ -2,17 +2,15 @@ import { useState } from 'react'
 import './index.css'
 import './styles/App.css'
 
+import sampleData from './sample-data'
 import Resume from './components/Resume'
 import FormSection from './components/FormSection'
 import PersonalInfoForm from './components/Personal/PersonalInfoForm'
+import SummaryForm from './components/Personal/SummaryForm'
 
 function App() {
-  const [personalInfo, setPersonalInfo] = useState({
-    fullName: 'Hana Bae',
-    phone: '213.507.5327',
-    email: 'habae1004@gmail.com'
-  });
-  const [summary, setSummary] = useState('');
+  const [personalInfo, setPersonalInfo] = useState(sampleData.personalInfo);
+  const [summary, setSummary] = useState(sampleData.summary);
 
   function handlePersonalInfoChange(e) {
     const { key } = e.target.dataset;
@@ -27,8 +25,10 @@ function App() {
     <main className="app">
       <Resume
         personalInfo={personalInfo}
+        summary={summary}
       />
-      <section className="edit-panel-container">
+      <section className="edit-panel">
+        
         <FormSection
           formClassName="personal-info-form"
           formTitle="Personal"
@@ -40,6 +40,17 @@ function App() {
             phone={personalInfo.phone}
           />
         </FormSection>
+
+        <FormSection
+          formClassName="summary-form"
+          formTitle="Summary"
+        >
+          <SummaryForm 
+            onChange={handleSummaryChange}
+            summary={summary}
+          />
+        </FormSection>
+
       </section>
     </main>
   )
