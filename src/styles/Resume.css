@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@1,400;1,500&display=swap');
+
+.resume-container {
+  width: 22cm;
+  height: 28cm;
+}
+
+.resume {
+  display: grid;
+  width: 22cm;
+  height: 28cm;
+  grid-template-columns: 2.5fr 1fr;
+  grid-template-rows: 1fr 2fr 6fr;
+  font-family: 'Inter', sans-serif;
+  color: black;
+}
+
+.main-part {
+  background-color: white;
+  padding: 25px;
+}
+
+.side-part {
+  background-color: #EDE8E8;
+  padding: 25px;
+}
+
+.name {
+  font-family: 'Lora', serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 32px;
+  margin: 0;
+  align-self: end;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.contact-info {
+  text-align: right;
+  font-size: 12px;
+}
+
+.contact-info p {
+  margin: 0;
+}
+
+.summary {
+  font-size: 11px;
+}
+
+.section-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.section-content {
+  margin: 0 16px;
+}
+
