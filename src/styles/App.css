@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
   padding: 2rem;
-  color: rgb(40, 40, 40);
 }
 
 .app {
@@ -16,7 +15,7 @@
   min-width: 25%;
   max-width: 40%;
   padding: 20px;
-  background-color: rgb(227, 227, 227);
+  background-color: rgb(244, 244, 244);
   border-radius: 16px;
   display: flex;
   flex-direction: column;

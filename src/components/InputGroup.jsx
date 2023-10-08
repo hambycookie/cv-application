@@ -20,6 +20,7 @@ function InputGroup({
           data-key={dataKey}
           value={value}
           onChange={onChange}
+          rows="7"
         ></textarea>
       ) : (
         <input

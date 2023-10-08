@@ -2,7 +2,7 @@ import "../styles/Resume.css"
 
 function Resume({ personalInfo, summary }) {
   return (
-    <section className="resume-container">
+    <section className="resume-paper">
       <div className="resume">
         <h1 className="name main-part">{personalInfo.fullName}</h1>
         <div className="contact-section side-part">

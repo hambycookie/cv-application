@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@1,400;1,500&display=swap');
 
-.resume-container {
+.resume-paper {
   width: 22cm;
   height: 28cm;
+  background-color: white;
 }
 
 .resume {
@@ -18,6 +19,7 @@
 .main-part {
   background-color: white;
   padding: 25px;
+  margin-left: 20px;
 }
 
 .side-part {
@@ -25,13 +27,18 @@
   padding: 25px;
 }
 
+.side-part > * {
+  margin-right: 20px;
+}
+
 .name {
   font-family: 'Lora', serif;
   font-weight: normal;
   font-style: italic;
   font-size: 32px;
-  margin: 0;
   align-self: end;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .contact-section {
@@ -62,5 +69,5 @@
 }
 
 .section-content-indent {
-  margin: 0 16px;
+  margin: 0 32px;
 }
