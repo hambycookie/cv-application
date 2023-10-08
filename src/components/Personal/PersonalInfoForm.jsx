@@ -1,3 +1,4 @@
+import '../../styles/FormSection.css'
 import InputGroup from '../InputGroup'
 
 function PersonalInfoForm({ onChange, fullName, email, phone }) {
@@ -6,6 +7,7 @@ function PersonalInfoForm({ onChange, fullName, email, phone }) {
   return (
     <div className="form-inputs">
       <InputGroup
+        type="text"
         label="Full name"
         id="full-name"
         placeholder="Enter full name"
@@ -14,6 +16,7 @@ function PersonalInfoForm({ onChange, fullName, email, phone }) {
         onChange={onChange}
       />
       <InputGroup
+        type="text"
         label="Email"
         id="email"
         placeholder="Enter email"
@@ -22,6 +25,7 @@ function PersonalInfoForm({ onChange, fullName, email, phone }) {
         onChange={onChange}
       />
       <InputGroup
+        type="text"
         label="Phone"
         id="phone"
         placeholder="Enter phone number"

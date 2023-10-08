@@ -7,13 +7,32 @@ label {
   font-size: 14px;
 }
 
-input {
+input, textarea {
   padding: 8px;
   border-radius: 4px;
   border: 1px solid rgb(182, 182, 182);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
 }
 
-input:focus, input:active {
+input:focus, input:active, textarea:focus, textarea:active {
   border: 2px solid grey;
   outline: none;
+}
+
+input::placeholder, textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  opacity: 0.6; /* Firefox */
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder { /* Microsoft Edge */
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+textarea {
+  resize: vertical;
 }
