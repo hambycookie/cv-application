@@ -9,7 +9,3 @@
 .form-title::before {
   content: "+ ";
 }
-
-.Collapsible__contentOuter {
-  transition: height 200ms linear 0s;
-}
