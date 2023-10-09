@@ -42,6 +42,7 @@ function App() {
       <Resume
         personalInfo={personalInfo}
         summary={summary}
+        educations={educationInfo}
       />
       <section className="edit-panel">
         

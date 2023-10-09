@@ -1,6 +1,7 @@
 import "../styles/Resume.css"
+import EducationSection from "./Education/EducationSection"
 
-function Resume({ personalInfo, summary }) {
+function Resume({ personalInfo, summary, educations }) {
   return (
     <section className="resume-paper">
       <div className="resume">
@@ -17,7 +18,7 @@ function Resume({ personalInfo, summary }) {
         <div className="education-section side-part">
           <div className="education-content">
             <h5 className="section-title">EDUCATION</h5>
-            {/* insert content here */}
+            <EducationSection educations={educations} />
           </div>
         </div>
         <div className="experience-section main-part">
