@@ -7,10 +7,12 @@ import Resume from './components/Resume'
 import FormSection from './components/FormSection'
 import PersonalInfoForm from './components/Personal/PersonalInfoForm'
 import SummaryForm from './components/Personal/SummaryForm'
+import EducationPanel from './components/Education/EducationPanel'
 
 function App() {
   const [personalInfo, setPersonalInfo] = useState(sampleData.personalInfo);
   const [summary, setSummary] = useState(sampleData.summary);
+  const [educationInfo, setEducationInfo] = useState(sampleData.education);
 
   function handlePersonalInfoChange(e) {
     const { key } = e.target.dataset;
@@ -19,6 +21,20 @@ function App() {
 
   function handleSummaryChange(e) {
     setSummary(e.target.value);
+  }
+
+  function handleEducationInfoChange(e) {
+    const { key } = e.target.dataset;
+    const formId = e.target.closest(".form-inputs").id;
+    const updatedInfo = educationInfo.map((obj) => {
+        if (obj.id == formId) {
+          return {...obj, [key]: e.target.value}
+        } else {
+          return obj;
+        }
+      });
+    console.log(updatedInfo);
+    setEducationInfo(updatedInfo);
   }
 
   return (
@@ -48,6 +64,16 @@ function App() {
           <SummaryForm 
             onChange={handleSummaryChange}
             summary={summary}
+          />
+        </FormSection>
+
+        <FormSection
+          formClassName="education-form"
+          formTitle="Education"
+        >
+          <EducationPanel
+            educations={educationInfo}
+            onChange={handleEducationInfoChange}
           />
         </FormSection>
 

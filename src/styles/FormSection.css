@@ -1,5 +1,5 @@
 .form-title {
-  margin: 1rem 0.5rem;
+  margin: 0.2rem;
   text-transform: uppercase;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -8,4 +8,12 @@
 
 .form-title::before {
   content: "+ ";
+}
+
+.form-inputs {
+  margin-top: 1rem;
+}
+
+.Collapsible:hover {
+  cursor: pointer;
 }

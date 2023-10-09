@@ -1,0 +1,23 @@
+.education-list {
+  display: flex; 
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 1rem;
+}
+
+.education-list > .Collapsible {
+  background-color: rgb(230, 230, 230);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.card-title {
+  margin: 0;
+}
+
+.card-title::before {
+  content: "+ ";
+}
+
+.Collapsible__contentOuter {
+}
