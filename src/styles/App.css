@@ -1,9 +1,11 @@
 #root {
-  max-width: 1280px;
-  padding: 2rem;
+  padding: 1rem;
+  padding-top: 1rem;
+  margin: 1rem auto;
 }
 
 .app {
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   gap: 24px;
@@ -12,13 +14,24 @@
 
 .edit-panel {
   right: 0;
-  min-width: 25%;
-  max-width: 40%;
+  height: auto;
+  max-height: 100%;
   padding: 20px;
   background-color: rgb(244, 244, 244);
-  border-radius: 16px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   overflow-y: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .app {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+
 }

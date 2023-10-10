@@ -1,21 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@1,400;1,500&display=swap');
 
 .resume-paper {
-  width: 22cm;
-  height: 28cm;
+  aspect-ratio: 8.5/11;
   background-color: white;
+  max-height: 80vh;
 }
 
 .resume {
+  aspect-ratio: 8.5/11;
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
   display: grid;
-  width: 22cm;
-  height: 28cm;
   grid-template-columns: 2.5fr 1fr;
   grid-template-rows: 1fr 2fr 6fr;
   font-family: 'Inter', sans-serif;
   color: black;
-  line-height: 110%;
-  font-size: 14px;
+  line-height: 130%;
+  font-size: 13px;
 }
 
 .main-part {
@@ -76,4 +78,10 @@
 
 .experience-content {
   margin: 2rem 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .resume-paper {
+    max-width: 90vw;
+  }
 }

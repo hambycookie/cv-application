@@ -29,12 +29,12 @@ function App() {
     const { key } = e.target.dataset;
     const formId = e.target.closest(".form-inputs").id;
     const updatedInfo = educationInfo.map((obj) => {
-        if (obj.id == formId) {
-          return {...obj, [key]: e.target.value}
-        } else {
-          return obj;
-        }
-      });
+      if (obj.id == formId) {
+        return { ...obj, [key]: e.target.value }
+      } else {
+        return obj;
+      }
+    });
     setEducationInfo(updatedInfo);
   }
 
@@ -56,12 +56,12 @@ function App() {
     const { key } = e.target.dataset;
     const formId = e.target.closest(".form-inputs").id;
     const updatedInfo = experienceInfo.map((obj) => {
-        if (obj.id == formId) {
-          return {...obj, [key]: e.target.value}
-        } else {
-          return obj;
-        }
-      });
+      if (obj.id == formId) {
+        return { ...obj, [key]: e.target.value }
+      } else {
+        return obj;
+      }
+    });
     setExperienceInfo(updatedInfo);
   }
 
@@ -89,52 +89,52 @@ function App() {
         educations={educationInfo}
         experiences={experienceInfo}
       />
-      <section className="edit-panel">
-        
-        <FormSection
-          formClassName="personal-info-form"
-          formTitle="Personal"
-        >
-          <PersonalInfoForm
-            onChange={handlePersonalInfoChange}
-            fullName={personalInfo.fullName}
-            email={personalInfo.email}
-            phone={personalInfo.phone}
-          />
-        </FormSection>
+      <section >
+        <div className="edit-panel">
+          <FormSection
+            formClassName="personal-info-form"
+            formTitle="Personal"
+          >
+            <PersonalInfoForm
+              onChange={handlePersonalInfoChange}
+              fullName={personalInfo.fullName}
+              email={personalInfo.email}
+              phone={personalInfo.phone}
+            />
+          </FormSection>
 
-        <FormSection
-          formClassName="summary-form"
-          formTitle="Summary"
-        >
-          <SummaryForm 
-            onChange={handleSummaryChange}
-            summary={summary}
-          />
-        </FormSection>
+          <FormSection
+            formClassName="summary-form"
+            formTitle="Summary"
+          >
+            <SummaryForm
+              onChange={handleSummaryChange}
+              summary={summary}
+            />
+          </FormSection>
 
-        <FormSection
-          formClassName="education-form"
-          formTitle="Education"
-        >
-          <EducationPanel
-            educations={educationInfo}
-            onChange={handleEducationInfoChange}
-            addEducation={handleAddEducationInfo}
-          />
-        </FormSection>
+          <FormSection
+            formClassName="education-form"
+            formTitle="Education"
+          >
+            <EducationPanel
+              educations={educationInfo}
+              onChange={handleEducationInfoChange}
+              addEducation={handleAddEducationInfo}
+            />
+          </FormSection>
 
-        <FormSection
-          formClassName="experience-form"
-          formTitle="Experience"
-        >
-          <ExperiencePanel
-            experiences={experienceInfo}
-            onChange={handleExperienceInfoChange}
-            addExperience={handleAddExperienceInfo}
-          />
-        </FormSection>
-
+          <FormSection
+            formClassName="experience-form"
+            formTitle="Experience"
+          >
+            <ExperiencePanel
+              experiences={experienceInfo}
+              onChange={handleExperienceInfoChange}
+              addExperience={handleAddExperienceInfo}
+            />
+          </FormSection>
+        </div>
       </section>
     </main>
   )

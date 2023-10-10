@@ -25,11 +25,12 @@
 .item-title {
   font-family: 'Lora', 'serif';
   font-style: italic;
+  font-size: 15px;
   font-weight: 500;
 }
 
 .item-title.job {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .item-subtitle {
@@ -44,6 +45,6 @@
   font-size: 11px;
 }
 
-.degree {
+.degree, .description {
   font-size: 13px;
 }
