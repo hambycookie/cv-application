@@ -1,11 +1,11 @@
 import { EducationForm, NewEducationForm } from "./EducationForm";
 import Collapsible from 'react-collapsible'
-import '../../styles/EducationPanel.css';
+import '../../styles/SectionPanel.css';
 
 function EducationPanel({ educations, onChange, addEducation }) {
   return (
-    <div className="education-panel">
-      <div className="education-list">
+    <div className="section-panel">
+      <div className="panel-list">
         {educations.map((education) =>
           <Collapsible
             className="education-card"
@@ -25,7 +25,7 @@ function EducationPanel({ educations, onChange, addEducation }) {
           </Collapsible>
         )}
       </div>
-      <div className="add-education">
+      <div className="add-section-item">
         <Collapsible
           className="new-education-card"
           trigger={<h5 className="card-title">Add education</h5>}

@@ -14,6 +14,8 @@
   grid-template-rows: 1fr 2fr 6fr;
   font-family: 'Inter', sans-serif;
   color: black;
+  line-height: 110%;
+  font-size: 14px;
 }
 
 .main-part {
@@ -70,4 +72,8 @@
 
 .section-content-indent {
   margin: 0 32px;
+}
+
+.experience-content {
+  margin: 2rem 12px;
 }

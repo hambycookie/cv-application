@@ -1,21 +1,21 @@
-.education-list {
+.panel-list {
   display: flex; 
   flex-direction: column;
   gap: 4px;
   margin-top: 1rem;
 }
 
-.education-panel > * > .Collapsible {
+.section-panel > * > .Collapsible {
   border-radius: 8px;
   padding: 1rem;
 }
 
-.education-list > .Collapsible {
+.panel-list > .Collapsible {
   background-color: rgb(201, 201, 201);
 }
 
 
-.add-education > .Collapsible {
+.add-section-item > .Collapsible {
   margin-top: 1rem;
   background-color: rgb(230, 230, 230);
   border: 1px solid rgb(201, 201, 201);

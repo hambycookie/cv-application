@@ -4,10 +4,18 @@
   gap: 20px;
 }
 
+.experience-section-list {
+  gap: 30px;
+}
+
 .section-item {
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+.experience-item {
+  gap: 10px;
 }
 
 .section-item > * {
@@ -20,7 +28,17 @@
   font-weight: 500;
 }
 
-.item-date {
+.item-title.job {
+  font-size: 1.3rem;
+}
+
+.item-subtitle {
+  margin-left: 1rem;
+  font-family: 'Lora', 'serif';
+  font-weight: 400;
+}
+
+.item-date, .item-location {
   font-family: 'Inter', 'sans-serif';
   font-weight: 600;
   font-size: 11px;

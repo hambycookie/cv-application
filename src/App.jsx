@@ -8,11 +8,13 @@ import FormSection from './components/FormSection'
 import PersonalInfoForm from './components/Personal/PersonalInfoForm'
 import SummaryForm from './components/Personal/SummaryForm'
 import EducationPanel from './components/Education/EducationPanel'
+import ExperiencePanel from './components/Experience/ExperiencePanel'
 
 function App() {
   const [personalInfo, setPersonalInfo] = useState(sampleData.personalInfo);
   const [summary, setSummary] = useState(sampleData.summary);
   const [educationInfo, setEducationInfo] = useState(sampleData.education);
+  const [experienceInfo, setExperienceInfo] = useState(sampleData.experience);
 
   function handlePersonalInfoChange(e) {
     const { key } = e.target.dataset;
@@ -50,12 +52,42 @@ function App() {
     e.target.reset();
   }
 
+  function handleExperienceInfoChange(e) {
+    const { key } = e.target.dataset;
+    const formId = e.target.closest(".form-inputs").id;
+    const updatedInfo = experienceInfo.map((obj) => {
+        if (obj.id == formId) {
+          return {...obj, [key]: e.target.value}
+        } else {
+          return obj;
+        }
+      });
+    setExperienceInfo(updatedInfo);
+  }
+
+  function handleAddExperienceInfo(e) {
+    e.preventDefault();
+    console.log(e.target);
+    const newObj = {
+      id: e.target.id,
+      company: e.target.company.value,
+      position: e.target.position.value,
+      location: e.target.location.value,
+      startDate: e.target.startDate.value,
+      endDate: e.target.endDate.value,
+      description: e.target.description.value,
+    };
+    setExperienceInfo([...experienceInfo, newObj]);
+    e.target.reset();
+  }
+
   return (
     <main className="app">
       <Resume
         personalInfo={personalInfo}
         summary={summary}
         educations={educationInfo}
+        experiences={experienceInfo}
       />
       <section className="edit-panel">
         
@@ -89,6 +121,17 @@ function App() {
             educations={educationInfo}
             onChange={handleEducationInfoChange}
             addEducation={handleAddEducationInfo}
+          />
+        </FormSection>
+
+        <FormSection
+          formClassName="experience-form"
+          formTitle="Experience"
+        >
+          <ExperiencePanel
+            experiences={experienceInfo}
+            onChange={handleExperienceInfoChange}
+            addExperience={handleAddExperienceInfo}
           />
         </FormSection>
 
