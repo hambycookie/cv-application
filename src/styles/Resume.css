@@ -1,87 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@1,400;1,500&display=swap');
-
 .resume-paper {
   aspect-ratio: 8.5/11;
   background-color: white;
   max-height: 80vh;
 }
 
-.resume {
+.resume-container {
   aspect-ratio: 8.5/11;
-  width: 100%;
-  height: 100%;
   overflow:hidden;
-  display: grid;
-  grid-template-columns: 2.5fr 1fr;
-  grid-template-rows: 1fr 2fr 6fr;
+  display: flex;
+  flex-direction: row;
   font-family: 'Inter', sans-serif;
   color: black;
-  line-height: 130%;
-  font-size: 13px;
+  /* line-height: 130%; */
+  font-size: 1vmin;
+}
+
+p {
+  margin: 0;
+}
+
+.main-part, .side-part {
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
 .main-part {
   background-color: white;
-  padding: 25px;
-  margin-left: 20px;
+  padding-left: 4em;
+  padding-right: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
 }
 
 .side-part {
   background-color: #EDE8E8;
-  padding: 25px;
-}
-
-.side-part > * {
-  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
+  min-width: 25%;
 }
 
 .name {
   font-family: 'Lora', serif;
   font-weight: normal;
   font-style: italic;
-  font-size: 32px;
-  align-self: end;
+  font-size: 3em;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.contact-section {
+.name-section, .contact-section {
+  margin-top: 1em;
+  height:3em;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
   align-items: flex-end;
+}
+
+.contact-section {
+  align-self: flex-end;
 }
 
 .contact-info {
   text-align: right;
-  font-size: 12px;
-}
-
-.contact-info p {
-  margin: 0;
-}
-
-.summary {
-  font-size: 14px;
 }
 
 .section-title {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 1.1em;
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 2em;
 }
 
-.section-content-indent {
-  margin: 0 32px;
+.experience-section > .section-title {
+  margin-bottom: 2.5em;
 }
 
-.experience-content {
-  margin: 2rem 12px;
+.experience-section, .skills-section {
+  margin-top: auto;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .resume-paper {
     max-width: 90vw;
+  }
+  .resume-container {
+    font-size: 1.3vmin;
   }
 }

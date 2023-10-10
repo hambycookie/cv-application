@@ -1,21 +1,21 @@
 .section-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2em;
 }
 
 .experience-section-list {
-  gap: 30px;
+  gap: 3em;
 }
 
 .section-item {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 0.5em;
 }
 
 .experience-item {
-  gap: 10px;
+  gap: 0.6em;
 }
 
 .section-item > * {
@@ -25,26 +25,27 @@
 .item-title {
   font-family: 'Lora', 'serif';
   font-style: italic;
-  font-size: 15px;
+  font-size:  1.2em;
   font-weight: 500;
 }
 
 .item-title.job {
-  font-size: 1.2rem;
+  font-size: 1.5em;
 }
 
 .item-subtitle {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   font-family: 'Lora', 'serif';
   font-weight: 400;
+  font-size: 1.1em;
 }
 
 .item-date, .item-location {
   font-family: 'Inter', 'sans-serif';
   font-weight: 600;
-  font-size: 11px;
+  font-size: 0.9em;
 }
 
 .degree, .description {
-  font-size: 13px;
+  /* font-size: 13px; */
 }
