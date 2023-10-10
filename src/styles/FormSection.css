@@ -2,7 +2,7 @@
   margin: 0.2rem;
   text-transform: uppercase;
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.9rem;
 }
 
@@ -10,8 +10,11 @@
   content: "+ ";
 }
 
-.form-inputs {
+.form-inputs, .add-form-inputs {
   margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .Collapsible:hover {

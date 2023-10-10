@@ -8,9 +8,9 @@ function FormSection({ formClassName, formTitle, children }) {
       trigger={<h5 className="form-title">{formTitle}</h5>}
       transitionTime={150}
     >
-      <form className={formClassName}>
+      <div className={formClassName}>
         {children}
-      </form>
+      </div>
     </Collapsible>
   )
 }

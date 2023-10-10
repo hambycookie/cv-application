@@ -33,8 +33,21 @@ function App() {
           return obj;
         }
       });
-    console.log(updatedInfo);
     setEducationInfo(updatedInfo);
+  }
+
+  function handleAddEducationInfo(e) {
+    e.preventDefault();
+    const newObj = {
+      id: e.target.id,
+      school: e.target.school.value,
+      degree: e.target.degree.value,
+      location: e.target.location.value,
+      startDate: e.target.startDate.value,
+      endDate: e.target.endDate.value,
+    };
+    setEducationInfo([...educationInfo, newObj]);
+    e.target.reset();
   }
 
   return (
@@ -75,6 +88,7 @@ function App() {
           <EducationPanel
             educations={educationInfo}
             onChange={handleEducationInfoChange}
+            addEducation={handleAddEducationInfo}
           />
         </FormSection>
 

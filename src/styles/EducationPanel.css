@@ -5,19 +5,48 @@
   margin-top: 1rem;
 }
 
-.education-list > .Collapsible {
-  background-color: rgb(230, 230, 230);
+.education-panel > * > .Collapsible {
   border-radius: 8px;
   padding: 1rem;
 }
 
+.education-list > .Collapsible {
+  background-color: rgb(201, 201, 201);
+}
+
+
+.add-education > .Collapsible {
+  margin-top: 1rem;
+  background-color: rgb(230, 230, 230);
+  border: 1px solid rgb(201, 201, 201);
+  color: rgb(62, 62, 62);
+}
+
 .card-title {
   margin: 0;
+  font-weight: 600;
 }
 
 .card-title::before {
   content: "+ ";
 }
 
-.Collapsible__contentOuter {
+.form-buttons {
+  margin-top: 1rem;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+}
+
+.form-buttons > button {
+  border: none;
+  background-color:rgb(201, 201, 201);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-buttons > button:hover {
+  border: none;
+  background-color: white;
 }

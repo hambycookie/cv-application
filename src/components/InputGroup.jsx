@@ -7,7 +7,8 @@ function InputGroup({
   "data-key": dataKey,
   onChange,
   value,
-  type
+  type,
+  name
 }) {
   return (
     <div className="input-group">
@@ -20,6 +21,7 @@ function InputGroup({
           data-key={dataKey}
           value={value}
           onChange={onChange}
+          name={name}
           rows="7"
         ></textarea>
       ) : (
@@ -30,6 +32,7 @@ function InputGroup({
           data-key={dataKey}
           value={value}
           onChange={onChange}
+          name={name}
         />
       )}
     </div>
