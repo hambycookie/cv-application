@@ -27,8 +27,12 @@
   font-weight: 600;
 }
 
-.card-title::before {
+.is-closed > .card-title::before {
   content: "+ ";
+}
+
+.is-open > .card-title::before {
+  content: "− ";
 }
 
 .form-buttons {

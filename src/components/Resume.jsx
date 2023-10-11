@@ -25,8 +25,8 @@ function Resume({ personalInfo, summary, educations, experiences }) {
         <div className="side-part">
           <div className="contact-section">
             <div className="contact-info">
-              <p>{personalInfo.phone}</p>
-              <p>{personalInfo.email}</p>
+              <p>☎ {personalInfo.phone}</p>
+              <p>✉ {personalInfo.email}</p>
             </div>
           </div>
           <div className="education-section">

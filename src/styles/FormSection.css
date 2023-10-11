@@ -6,8 +6,12 @@
   font-size: 0.9rem;
 }
 
-.form-title::before {
+.is-closed > .form-title::before {
   content: "+ ";
+}
+
+.is-open > .form-title::before {
+  content: "− ";
 }
 
 .form-inputs, .add-form-inputs {
