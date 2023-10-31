@@ -33,6 +33,20 @@ const sampleData = {
       endDate: 'JUL 2023',
       description: 'Serve as the sole SharePoint subject matter expert during program-wide transition to a modern Microsoft work environment. Integrate various Microsoft platforms to automate repetitive tasks and streamline workflows. Debug and develop Excel VBA macros to automate large schedules and trackers. Advise stakeholders on SharePoint solutions for various projects.'
     }
+  ],
+  skills: [
+    {
+      id: '1',
+      content: 'HTML + CSS'
+    },
+    {
+      id: '2',
+      content: 'JavaScript'
+    },
+    {
+      id: '3',
+      content: 'ReactJS'
+    }
   ]
 }
 

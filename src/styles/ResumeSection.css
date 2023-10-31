@@ -8,6 +8,10 @@
   gap: 3em;
 }
 
+.skill-section-list {
+  gap: 0em;
+}
+
 .section-item {
   display: flex;
   flex-direction: column;

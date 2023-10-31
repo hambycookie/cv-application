@@ -9,12 +9,14 @@ import PersonalInfoForm from './components/Personal/PersonalInfoForm'
 import SummaryForm from './components/Personal/SummaryForm'
 import EducationPanel from './components/Education/EducationPanel'
 import ExperiencePanel from './components/Experience/ExperiencePanel'
+import SkillPanel from './components/Skills/SkillPanel'
 
 function App() {
   const [personalInfo, setPersonalInfo] = useState(sampleData.personalInfo);
   const [summary, setSummary] = useState(sampleData.summary);
   const [educationInfo, setEducationInfo] = useState(sampleData.education);
   const [experienceInfo, setExperienceInfo] = useState(sampleData.experience);
+  const [skillInfo, setSkillInfo] = useState(sampleData.skills);
 
   function handlePersonalInfoChange(e) {
     const { key } = e.target.dataset;
@@ -81,6 +83,14 @@ function App() {
     e.target.reset();
   }
 
+  function handleSkillInfoChange(e) {
+    // TODO
+  }
+
+  function handleAddSkillInfo(e) {
+    // TODO
+  }
+
   return (
     <main className="app">
       <Resume
@@ -88,6 +98,7 @@ function App() {
         summary={summary}
         educations={educationInfo}
         experiences={experienceInfo}
+        skills={skillInfo}
       />
       <section >
         <div className="edit-panel">
@@ -143,7 +154,11 @@ function App() {
           <FormSection
             formTitle="Skills"
           >
-            {/* insert panel */}
+            <SkillPanel
+              skills={skillInfo}
+              onChange={handleSkillInfoChange}
+              addSkill={handleAddSkillInfo}
+            />
           </FormSection>
         </div>
       </section>
