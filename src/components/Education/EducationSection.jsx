@@ -7,7 +7,7 @@ function EducationSection({ educations }) {
       {educations.map((education) => 
         <div key={education.id} className="section-item education-item">
           <p className="item-title">{education.school}</p>
-          <p className="item-date">{education.startDate} - {education.endDate}</p>
+          <p className="item-detail item-date">{education.startDate} - {education.endDate}</p>
           <p className="degree">{education.degree}</p>
         </div>   
       )}

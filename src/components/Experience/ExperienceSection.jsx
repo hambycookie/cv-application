@@ -9,7 +9,7 @@ function ExperienceSection({ experiences }) {
             <span className="job item-title">{exp.company}</span>
             <span className="item-subtitle">{exp.position}</span>
           </div>
-          <div>
+          <div className="item-detail">
             <span className="item-location">{exp.location}</span>
             <span className="divider-icon"> ✦ </span>
             <span className="item-date">{exp.startDate} - {exp.endDate}</span>

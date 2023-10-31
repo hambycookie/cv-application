@@ -91,6 +91,7 @@ function App() {
       />
       <section >
         <div className="edit-panel">
+          {/* Personal info */}
           <FormSection
             formClassName="personal-info-form"
             formTitle="Personal"
@@ -103,6 +104,7 @@ function App() {
             />
           </FormSection>
 
+          {/* Summary */}
           <FormSection
             formClassName="summary-form"
             formTitle="Summary"
@@ -113,6 +115,7 @@ function App() {
             />
           </FormSection>
 
+          {/* Education */}
           <FormSection
             formClassName="education-form"
             formTitle="Education"
@@ -124,6 +127,7 @@ function App() {
             />
           </FormSection>
 
+          {/* Experience */}
           <FormSection
             formClassName="experience-form"
             formTitle="Experience"
@@ -133,6 +137,13 @@ function App() {
               onChange={handleExperienceInfoChange}
               addExperience={handleAddExperienceInfo}
             />
+          </FormSection>
+
+          {/* Skills */}
+          <FormSection
+            formTitle="Skills"
+          >
+            {/* insert panel */}
           </FormSection>
         </div>
       </section>

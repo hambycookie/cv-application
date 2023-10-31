@@ -40,10 +40,11 @@
   font-size: 1.1em;
 }
 
-.item-date, .item-location {
+.item-detail {
   font-family: 'Inter', 'sans-serif';
   font-weight: 600;
   font-size: 0.9em;
+  color:rgb(59, 59, 59)
 }
 
 .degree, .description {
